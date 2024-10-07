@@ -68,11 +68,11 @@ export default class App extends React.Component {
     return (
       <div>
         <div id="error">{this.state.error}</div>
-       <TodoList
-       todos={this.state.todos}
-       displayCompleteds={this.state.displayCompleteds}
-       toggleCompleted={this.toggleCompleted}
-       />
+        <TodoList
+          todos={this.state.todos}
+          displayCompleteds={this.state.displayCompleteds}
+          toggleCompleted={this.toggleCompleted}
+        />
         <Form
           onTodoFormSubmit={this.onTodoFormSubmit}
           onTodoNameInputChange={this.onTodoNameInputChange}
